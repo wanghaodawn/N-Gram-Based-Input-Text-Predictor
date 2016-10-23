@@ -1,0 +1,8 @@
+Merge Files:
+hadoop fs -cat /task1_output/* > task1_output3
+
+Sort Output File:
+sort -t$'\t' -nrk2,2 task1_output3 > task1_sort
+
+Show Top 100:
+head -100 task1_sort > ngrams
